@@ -60,11 +60,7 @@ if __name__ == "__main__":
                 diffs[a][b] += diff[a][b]
                 freqs[a][b] += freq[a][b]
     for x in diffs.keys():
-        for y in diffs.keys():
-            try:
-                f = freqs[x][y]
-            except KeyError:
-                continue
+        for y in diffs[x].keys():
             if freqs[x][y] != 0:
                 diffs[x][y] = diffs[x][y] * 1.0 / freqs[x][y]
     print 'ok'
