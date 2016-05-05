@@ -63,6 +63,6 @@ class SlopeOne(object):
                 ratings[b] /= self.freqs[a][b]
 
 if __name__ == '__main__':
-    #s = SlopeOne('../../ml-100k/train.base', '../../ml-100k/test.base')
-    s = SlopeOne('../../ml-1m/train.base', '../../ml-1m/test.base')
+    s = SlopeOne('../../ml-100k/train.base', '../../ml-100k/test.base')
+    # s = SlopeOne('../../ml-1m/train.base', '../../ml-1m/test.base')
     print s.compute_rmse()
